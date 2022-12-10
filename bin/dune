@@ -1,0 +1,4 @@
+(executable
+ (public_name room_draw)
+ (name main)
+ (libraries room_draw))
