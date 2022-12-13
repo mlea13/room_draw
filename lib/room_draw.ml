@@ -35,8 +35,11 @@ let undup_array a =
 
 let randomize stays =
   let draws = init_draws stays in
+  Printf.printf "Inputs: ";
   print_array draws (fun x -> x);
   let random_draws = knuth_shuffle draws in
+  Printf.printf "\nShuffled: ";  
   print_array random_draws (fun x -> x);
+  Printf.printf "\n### Results: ";    
   let order = undup_array random_draws in
   print_list order (fun x -> x)
